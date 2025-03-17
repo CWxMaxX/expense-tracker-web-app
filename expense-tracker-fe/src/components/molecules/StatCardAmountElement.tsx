@@ -1,4 +1,5 @@
 import React from 'react';
+import { convertToLocaleString } from '../../helpers/dateTimeConvertionHelpers';
 
 interface StatCardAmountElementProps {
     title: string;
@@ -21,7 +22,7 @@ const StatCardAmountElement: React.FC<StatCardAmountElementProps> = ({ title, am
               <div>
                 <div className='text-xs sm:text-lg'>{title}</div>
                 <div className="text-lg sm:text-3xl">
-                  <span>$</span> {amount.toFixed(2).toLocaleString()}
+                  <span>$</span> {convertToLocaleString(amount)}
                 </div>
               </div>
             </div>

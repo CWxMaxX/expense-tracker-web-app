@@ -5,7 +5,7 @@ import IncomeIcon from "../../assets/icons/ic_income.png";
 import ExpenseIcon from "../../assets/icons/ic_expense.png";
 import TotalIcon from "../../assets/icons/ic_total.png";
 import StatCardAmountElement from "../molecules/StatCardAmountElement";
-import CustomDateRangePicker from "../molecules/CustomDateRangePicker";
+import CustomDateRangePicker from "../atoms/CustomDateRangePicker";
 
 interface StatCardProps {
   totalBalance: number;
